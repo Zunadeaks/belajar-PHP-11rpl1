@@ -1,7 +1,9 @@
 <?php
-        $mysql = new mysql("localhost","root","","siswa_rpl");
-        if ($mysql -> connect_errno) {
-            echo "Failed to connect to MySQL: " . $mysql -> connect_error;
+      session_start();
+      
+      $mysqli = new mysqli("localhost","root","","siswa_rpl");
+      if ($mysqli -> connect_errno) {
+            echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
             exit();
-        }
+      }
 ?>
