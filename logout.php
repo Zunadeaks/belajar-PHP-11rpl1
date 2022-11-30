@@ -1,12 +1,12 @@
 <?php
-    include('./input-config.php');
+include ('input-config.php');
 
-    session_destroy();
+session_destroy();
 
-    echo "
+echo "
     <script>
         alert('Logout Berhasil');
-        window.location='login.php';
+        window.location='login.php'
     </script>
-    ";
+";
 ?>
